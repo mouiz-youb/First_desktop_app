@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
+    "build:client": "npm run build --prefix client", 
     "dev:client": "npm run dev --prefix client",
     "dev:electron": "nodemon --watch \"dist/**/*.js\" --exec \"electron .\"",
     "dev": "concurrently -k \"npm:watch\" \"npm:dev:client\" \"npm:dev:electron\""
