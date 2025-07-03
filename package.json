@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "build:client": "npm run build --prefix client", 
+    "build:client": "npm run build --prefix client",
     "dev:client": "npm run dev --prefix client",
     "dev:electron": "nodemon --watch \"dist/**/*.js\" --exec \"electron .\"",
     "dev": "concurrently -k \"npm:watch\" \"npm:dev:client\" \"npm:dev:electron\""
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.19.4",
     "concurrently": "^8.2.2",
     "electron": "^30.0.6",
     "nodemon": "^3.1.0",
